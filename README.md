@@ -6,3 +6,5 @@ Default `tmux.conf` file just the way I like it. Good for cloning to new machine
 
 ## `img` Directory
 These are just some images I like for backgrounds and stuff. This way I have em in one spot.
+
+THESE ARE NOT MY OWN CREATION -- FOR PERSONAL USE ONLY!!!
