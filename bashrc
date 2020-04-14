@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[00m\] \[\033[01;34m\][`date +"%y-%b-%d %T"`]\[\033[01;31m\] `ifconfig eth0 2>/dev/null | sed -n 2,2p | cut -d" " -f 10`\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\] > '
+    PS1='\[\033[00m\] \[\033[01;34m\][`/usr/bin/date +"%y-%b-%d %T"`]\[\033[01;31m\] `/sbin/ifconfig eth0 2>/dev/null | /usr/bin/sed -n 2,2p | /usr/bin/cut -d" " -f 10`\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\] > '
 else
-    PS1='[`date +"%y-%b-%d %T"`]\[\033[01;31m\] `ifconfig eth0 2>/dev/null | sed -n 2,2p | cut -d" " -f 10`\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\] > '
+    PS1='\[\033[00m\] \[\033[01;34m\][`/usr/bin/date +"%y-%b-%d %T"`]\[\033[01;31m\] `/sbin/ifconfig eth0 2>/dev/null | /usr/bin/sed -n 2,2p | /usr/bin/cut -d" " -f 10`\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\] > '
 fi
 unset color_prompt force_color_prompt
 
