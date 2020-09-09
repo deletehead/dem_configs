@@ -114,5 +114,5 @@ export PATH=$PATH:/usr/share/doc/python3-impacket/examples/
 
 # ALIASES
 alias ll="ls -la"
-date=$(date +"%Y-%m-%d")
+date=$(date +"%Y-%m-%d_%M-%S")
 alias onionlog='mkdir -p ~/onion_logs 2>/dev/null && script ~/onion_logs/$date.log 2>/dev/null && echo "Writing console output to ~/onion_logs/$date.log" || echo "Error writing console output to ~/onion_logs/$date.log"'
